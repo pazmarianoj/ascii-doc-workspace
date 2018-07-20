@@ -41,7 +41,7 @@ $ rvm is a function
 [source.bash]
 $ rvm gemset create test-gemset 
 $ rvm gemset use test-gemset
-Using ruby-2.5.0 with gemset asciidoctor
+Using ruby-2.5.0 with gemset test-gemset
 $ rvm gem install asciidoctor asciidoctor-pdf
 
 == **Usage**
