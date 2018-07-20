@@ -37,6 +37,8 @@ $ type rvm | head -n1
 [source.bash]
 $ rvm is a function 
 
+<<<
+
 == **Installation**
 [source.bash]
 $ rvm gemset create test-gemset 
