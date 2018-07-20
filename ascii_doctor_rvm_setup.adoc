@@ -1,0 +1,40 @@
+= Ascii Doctor - Workstation Setup
+Mariano Paz <mariano.paz@prediktive.com>
+
+[AsciiDoc](http://asciidoc.org) is a fast text processor and publishing toolchain for converting AsciiDoc content to HTML5, DocBook, PDF, and other formats.
+
+**Supported OS**
+
+* Arch Linux
+
+== Requirements
+* RVM (Ruby Version Manager) +
+**Installation (Run in your Terminal):**
+
+** Get the installation script
+[source.bash]
+$ curl -L get.rvm.io > rvm-install
+
+** Execute the installation script
+[source.bash]
+$ bash < ./rvm-install
+
+** Edit your '~/.bashrc' (or '~/.zprofile' or whatever) and add the following line to the end:
+[source.text]
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+** Reloading your ~/.bash_login with the following command:
+[source.bash]
+$ source ~/.bash_login
+
+** **Post Installation**
+After the installation, check everything worked:
+[source.bash]
+$ type rvm | head -n1
+
+** The response should be:
+[source.bash]
+$ rvm is a function 
+
+== Usage
+
