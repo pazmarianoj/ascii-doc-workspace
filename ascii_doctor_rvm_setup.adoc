@@ -1,6 +1,7 @@
 = **Ascii Doctor - Workstation Setup**
-Mariano Paz <mariano.paz@prediktive.com>
+Mariano Paz <mariano.paz@exampleemail.com>
 
+== **About ASCII DOCTOR**
 [AsciiDoc](http://asciidoc.org) is a fast text processor and publishing toolchain for converting AsciiDoc content to HTML5, DocBook, PDF, and other formats.
 
 **Supported OS**
@@ -27,7 +28,7 @@ $ bash < ./rvm-install
 [source.bash]
 $ source ~/.bash_login
 
-** **Post Installation**
+** **Validation**
 Check everything worked:
 [source.bash]
 $ type rvm | head -n1
@@ -36,17 +37,22 @@ $ type rvm | head -n1
 [source.bash]
 $ rvm is a function 
 
-== **Usage**
+== **Installation**
 [source.bash]
 $ rvm gemset create test-gemset 
 $ rvm gemset use test-gemset
 Using ruby-2.5.0 with gemset asciidoctor
-$ rvm gem install asciidoctor
+$ rvm gem install asciidoctor asciidoctor-pdf
 
+== **Usage**
 === **HTML output**
 [source.bash]
 $ asciidoctor example_file.adoc
 
 Outputs 'example_file.html'
 
-Other formats are supported via extentions (pdf, latex) 
+=== **PDF output**
+[source.bash]
+$ asciidoctor-pdf example_file.adoc
+
+Outputs 'example_file.pdf'
