@@ -1,4 +1,4 @@
-# PWD ASCII-DOCTOR Documents Collection
+# ASCII-DOCTOR Documents Collection
 This is a collection of interesting articles that a new member of the PWC's DevOps team might find interesting.
 
 ## How to Use this files:
