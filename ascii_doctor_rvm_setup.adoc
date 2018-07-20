@@ -1,4 +1,4 @@
-= Ascii Doctor - Workstation Setup
+= **Ascii Doctor - Workstation Setup**
 Mariano Paz <mariano.paz@prediktive.com>
 
 [AsciiDoc](http://asciidoc.org) is a fast text processor and publishing toolchain for converting AsciiDoc content to HTML5, DocBook, PDF, and other formats.
@@ -7,7 +7,7 @@ Mariano Paz <mariano.paz@prediktive.com>
 
 * Arch Linux
 
-== Requirements
+== **Requirements**
 * RVM (Ruby Version Manager) +
 **Installation (Run in your Terminal):**
 
@@ -19,7 +19,7 @@ $ curl -L get.rvm.io > rvm-install
 [source.bash]
 $ bash < ./rvm-install
 
-** Edit your '~/.bashrc' (or '~/.zprofile' or whatever) and add the following line to the end:
+** Edit your '~/.bashrc' (or '~/.zprofile') and add the following line to the end:
 [source.text]
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
@@ -28,7 +28,7 @@ $ bash < ./rvm-install
 $ source ~/.bash_login
 
 ** **Post Installation**
-After the installation, check everything worked:
+Check everything worked:
 [source.bash]
 $ type rvm | head -n1
 
@@ -36,5 +36,17 @@ $ type rvm | head -n1
 [source.bash]
 $ rvm is a function 
 
-== Usage
+== **Usage**
+[source.bash]
+$ rvm gemset create test-gemset 
+$ rvm gemset use test-gemset
+Using ruby-2.5.0 with gemset asciidoctor
+$ rvm gem install asciidoctor
 
+=== **HTML output**
+[source.bash]
+$ asciidoctor example_file.adoc
+
+Outputs 'example_file.html'
+
+Other formats are supported via extentions (pdf, latex) 
